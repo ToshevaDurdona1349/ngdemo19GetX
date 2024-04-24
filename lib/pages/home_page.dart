@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: const Text("Random Users - GetX"),
+        title: const Text("Random Users - GetX 1"),
       ),
       body: GetBuilder<HomeController>(
         builder: (controller) {

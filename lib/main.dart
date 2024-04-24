@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:ngdemo19/pages/home_page.dart';
+import 'package:ngdemo19/pages/starter_page.dart';
 
-import 'config/root_binding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,8 +18,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
-      initialBinding: RootBinding(),
+      home: StarterPage(),
+      // home uchun
+      // initialBinding: RootBinding(),
     );
   }
 }
