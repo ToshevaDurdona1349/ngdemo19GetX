@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:ngdemo19/pages/starter_page.dart';
+import 'package:ngdemo19/pages/main_page.dart';
+import 'package:ngdemo19/service/di_service.dart';
 
 
 void main() async{
-  // await DIService
+  await DIService.init();
   runApp(const MyApp());
 
 }
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: StarterPage(),
+      home: MainPage(),
       // home uchun
       // initialBinding: RootBinding(),
     );
