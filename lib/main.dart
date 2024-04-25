@@ -3,8 +3,10 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:ngdemo19/pages/starter_page.dart';
 
 
-void main() {
+void main() async{
+  // await DIService
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
